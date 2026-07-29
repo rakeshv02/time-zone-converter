@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time Zone Converter — Convert Time Between Any Time Zones | Tabutility</title>
+  <meta name="description" content="Instantly convert times between any two time zones worldwide. Perfect for scheduling meetings across time zones. Free time zone converter — no sign-up needed."/>
+  <link rel="canonical" href="https://time-zone-converter.tabutility.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://time-zone-converter.tabutility.com/"/>
+  <meta property="og:title" content="Time Zone Converter — Convert Time Between Any Time Zones"/>
+  <meta property="og:description" content="Instantly convert times between any two time zones worldwide."/>
+  <meta property="og:site_name" content="Tabutility"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>"/>
+  <meta name="theme-color" content="#1a1a2e"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Time Zone Converter","url":"https://time-zone-converter.tabutility.com/","description":"Convert times between any two time zones worldwide.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
+    a{color:#4f46e5;text-decoration:none}
+    nav{background:#1a1a2e;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+    .nav-brand{color:#fff;font-size:18px;font-weight:800}
+    .nav-links a{color:rgba(255,255,255,0.8);font-size:14px;margin-left:20px;font-weight:500}
+    .hero{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:40px 20px 32px;text-align:center}
+    .hero h1{font-size:clamp(24px,4vw,38px);font-weight:900;margin:0 0 10px}
+    .hero p{color:rgba(255,255,255,0.75);margin:0;font-size:16px}
+    .wrap{max-width:720px;margin:0 auto;padding:32px 20px 60px}
+    .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.07);margin-bottom:24px;border:1.5px solid #e8ecf2}
+    .card h2{font-size:18px;font-weight:800;margin:0 0 20px}
+    label{display:block;font-size:13px;font-weight:600;color:#64748b;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px}
+    select,input[type=time],input[type=date]{width:100%;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:15px;font-weight:600;color:#1e293b;background:#f8fafc;outline:none;transition:border 0.2s;cursor:pointer}
+    select:focus,input:focus{border-color:#4f46e5;background:#fff}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:520px){.row2{grid-template-columns:1fr}}
+    .convert-btn{width:100%;padding:14px;background:#4f46e5;color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer;margin-top:16px;transition:background 0.2s}
+    .convert-btn:hover{background:#4338ca}
+    .result-wrap{display:none}
+    .time-display{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .time-box{flex:1;min-width:200px;background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:14px;padding:24px;color:#fff;text-align:center}
+    .time-box.dest{background:linear-gradient(135deg,#0ea5e9,#0284c7)}
+    .time-val{font-size:clamp(28px,6vw,44px);font-weight:900;line-height:1}
+    .time-tz{font-size:13px;opacity:0.8;margin-top:6px;font-weight:600}
+    .time-date{font-size:14px;opacity:0.85;margin-top:4px}
+    .arrow{font-size:32px;color:#94a3b8;flex-shrink:0}
+    .offset-info{background:#f8fafc;border-radius:10px;padding:14px;font-size:14px;color:#475569;margin-top:16px;text-align:center}
+    .quick-zones{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    .qz{padding:6px 12px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:12px;font-weight:600;color:#475569;cursor:pointer;transition:all 0.15s}
+    .qz:hover{border-color:#4f46e5;color:#4f46e5}
+    .ad-wrap{margin:20px 0;text-align:center;min-height:90px;background:#f8fafc;border-radius:8px}
+    footer{background:#1a1a2e;color:rgba(255,255,255,0.6);text-align:center;padding:24px 20px;font-size:14px}
+    footer a{color:#818cf8}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="https://tabutility.com" class="nav-brand">⚡ Tabutility</a>
+  <div class="nav-links">
+    <a href="https://tabutility.com">All Tools</a>
+    <a href="https://tabutility.com/blog/">Blog</a>
+  </div>
+</nav>
+<div class="hero">
+  <h1>🌍 Time Zone Converter</h1>
+  <p>Convert any time between any two time zones worldwide — instantly</p>
+</div>
+<div class="wrap">
+  <div class="card">
+    <h2>Convert Time</h2>
+    <div class="row2" style="margin-bottom:16px">
+      <div>
+        <label>Date</label>
+        <input type="date" id="in-date"/>
+      </div>
+      <div>
+        <label>Time</label>
+        <input type="time" id="in-time"/>
+      </div>
+    </div>
+    <div class="row2">
+      <div>
+        <label>From Time Zone</label>
+        <select id="from-tz"></select>
+      </div>
+      <div>
+        <label>To Time Zone</label>
+        <select id="to-tz"></select>
+      </div>
+    </div>
+    <div style="margin-top:12px">
+      <div style="font-size:13px;font-weight:600;color:#64748b;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px">Quick select — To zone</div>
+      <div class="quick-zones" id="quick-zones"></div>
+    </div>
+    <button class="convert-btn" onclick="convert()">Convert →</button>
+  </div>
+
+  <div class="card result-wrap" id="result-wrap">
+    <h2>Converted Time</h2>
+    <div class="time-display">
+      <div class="time-box">
+        <div class="time-val" id="from-time-disp">—</div>
+        <div class="time-tz" id="from-tz-disp">—</div>
+        <div class="time-date" id="from-date-disp">—</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="time-box dest">
+        <div class="time-val" id="to-time-disp">—</div>
+        <div class="time-tz" id="to-tz-disp">—</div>
+        <div class="time-date" id="to-date-disp">—</div>
+      </div>
+    </div>
+    <div class="offset-info" id="offset-info"></div>
+  </div>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+  </div>
+
+  <div class="card">
+    <h2>Common Time Zone Conversions</h2>
+    <p style="font-size:14px;color:#475569;margin:0">Use the converter above for EST ↔ GMT, PST ↔ IST, CET ↔ EST and any other combination. The tool uses your browser's built-in time zone data so it automatically accounts for Daylight Saving Time (DST) changes.</p>
+  </div>
+</div>
+<footer>
+  <p>© 2025 <a href="https://tabutility.com">Tabutility</a> — Free Online Tools</p>
+</footer>
+<script>
+  const ZONES = [
+    'Pacific/Honolulu','America/Anchorage','America/Los_Angeles','America/Denver',
+    'America/Chicago','America/New_York','America/Sao_Paulo','Europe/London',
+    'Europe/Paris','Europe/Berlin','Europe/Amsterdam','Africa/Johannesburg',
+    'Asia/Dubai','Asia/Kolkata','Asia/Bangkok','Asia/Singapore',
+    'Asia/Tokyo','Australia/Sydney','Pacific/Auckland'
+  ];
+  const LABELS = {
+    'Pacific/Honolulu':'HST — Hawaii','America/Anchorage':'AKST — Alaska',
+    'America/Los_Angeles':'PST/PDT — Los Angeles','America/Denver':'MST/MDT — Denver',
+    'America/Chicago':'CST/CDT — Chicago','America/New_York':'EST/EDT — New York',
+    'America/Sao_Paulo':'BRT — São Paulo','Europe/London':'GMT/BST — London',
+    'Europe/Paris':'CET/CEST — Paris','Europe/Berlin':'CET/CEST — Berlin',
+    'Europe/Amsterdam':'CET/CEST — Amsterdam','Africa/Johannesburg':'SAST — Johannesburg',
+    'Asia/Dubai':'GST — Dubai','Asia/Kolkata':'IST — India',
+    'Asia/Bangkok':'ICT — Bangkok','Asia/Singapore':'SGT — Singapore',
+    'Asia/Tokyo':'JST — Tokyo','Australia/Sydney':'AEST/AEDT — Sydney',
+    'Pacific/Auckland':'NZST/NZDT — Auckland'
+  };
+  const QUICK = ['Europe/London','America/New_York','America/Los_Angeles','Asia/Kolkata','Asia/Tokyo','Australia/Sydney'];
+
+  const fromSel = document.getElementById('from-tz');
+  const toSel = document.getElementById('to-tz');
+
+  ZONES.forEach(z=>{
+    [fromSel,toSel].forEach(sel=>{
+      const o=document.createElement('option');
+      o.value=z; o.textContent=LABELS[z]||z;
+      sel.appendChild(o);
+    });
+  });
+
+  // Detect user tz
+  const userTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const matchFrom = ZONES.find(z=>z===userTz)||'Europe/London';
+  fromSel.value = matchFrom;
+  toSel.value = 'America/New_York';
+
+  // Quick zone buttons
+  const qzEl = document.getElementById('quick-zones');
+  QUICK.forEach(z=>{
+    const btn=document.createElement('button');
+    btn.className='qz';
+    const short = LABELS[z]?.split(' — ')[1]||z.split('/')[1];
+    btn.textContent=short;
+    btn.onclick=()=>{toSel.value=z;convert();};
+    qzEl.appendChild(btn);
+  });
+
+  // Set now
+  const now = new Date();
+  document.getElementById('in-date').value = now.toISOString().split('T')[0];
+  document.getElementById('in-time').value = now.toTimeString().slice(0,5);
+
+  function convert(){
+    const d = document.getElementById('in-date').value;
+    const t = document.getElementById('in-time').value;
+    const fromTz = fromSel.value;
+    const toTz = toSel.value;
+    if(!d||!t) return;
+
+    // Parse the input date/time as if it's in fromTz
+    const isoStr = `${d}T${t}:00`;
+    // Use Intl to format in both zones
+    const formatter = (tz) => new Intl.DateTimeFormat('en-GB',{
+      timeZone:tz,hour:'2-digit',minute:'2-digit',hour12:false,
+      weekday:'short',day:'numeric',month:'short',year:'numeric'
+    });
+
+    // Convert: create a Date that represents the input time in fromTz
+    const inputDate = new Date(isoStr);
+    // Get UTC offset of fromTz at that moment
+    const fromOffset = getOffset(fromTz, inputDate);
+    const toOffset = getOffset(toTz, inputDate);
+    const diff = toOffset - fromOffset;
+    const converted = new Date(inputDate.getTime() + diff * 60000);
+
+    const fmt12 = (tz, dt) => dt.toLocaleTimeString('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',hour12:false});
+    const fmtDate = (tz, dt) => dt.toLocaleDateString('en-GB',{timeZone:tz,weekday:'short',day:'numeric',month:'short'});
+
+    document.getElementById('from-time-disp').textContent = t.replace(':',':');
+    document.getElementById('from-tz-disp').textContent = LABELS[fromTz]||fromTz;
+    document.getElementById('from-date-disp').textContent = fmtDate(fromTz, inputDate);
+
+    document.getElementById('to-time-disp').textContent = fmt12(toTz, new Date(inputDate.getTime()));
+    document.getElementById('to-tz-disp').textContent = LABELS[toTz]||toTz;
+    document.getElementById('to-date-disp').textContent = fmtDate(toTz, inputDate);
+
+    const hrs = Math.floor(Math.abs(diff)/60);
+    const mins = Math.abs(diff)%60;
+    const sign = diff>=0?'+':'-';
+    document.getElementById('offset-info').textContent =
+      `${LABELS[toTz]||toTz} is ${sign}${hrs}h${mins?mins+'m':''} ${diff>=0?'ahead of':'behind'} ${LABELS[fromTz]||fromTz}`;
+
+    document.getElementById('result-wrap').style.display='block';
+  }
+
+  function getOffset(tz, date){
+    const s = date.toLocaleString('en-US',{timeZone:tz,timeZoneName:'short'});
+    // Use Intl offset trick
+    const utcDate = new Date(date.toLocaleString('en-US',{timeZone:'UTC'}));
+    const tzDate = new Date(date.toLocaleString('en-US',{timeZone:tz}));
+    return (tzDate-utcDate)/60000;
+  }
+
+  convert();
+</script>
+</body>
+</html>
