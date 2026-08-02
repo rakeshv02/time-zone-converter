@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://time-zone-converter.tabutility.com/sitemap.xml
