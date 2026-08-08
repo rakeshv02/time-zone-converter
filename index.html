@@ -7,6 +7,7 @@
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
   <title>Time Zone Converter — Convert Time Between Any Time Zones | Tabutility</title>
   <meta name="description" content="Instantly convert times between any two time zones worldwide. Perfect for scheduling meetings across time zones. Free time zone converter — no sign-up needed."/>
   <link rel="canonical" href="https://time-zone-converter.tabutility.com/"/>
@@ -24,7 +25,7 @@
   <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
   <style>
     *,*::before,*::after{box-sizing:border-box}
-    body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
+    body{margin:0;font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#f8fafc;color:#ffffff;line-height:1.6}
     a{color:#4f46e5;text-decoration:none}
     nav{background:#1a1a2e;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
     .nav-brand{color:#fff;font-size:18px;font-weight:800}
@@ -36,7 +37,7 @@
     .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.07);margin-bottom:24px;border:1.5px solid #e8ecf2}
     .card h2{font-size:18px;font-weight:800;margin:0 0 20px}
     label{display:block;font-size:13px;font-weight:600;color:#64748b;margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px}
-    select,input[type=time],input[type=date]{width:100%;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:15px;font-weight:600;color:#1e293b;background:#f8fafc;outline:none;transition:border 0.2s;cursor:pointer}
+    select,input[type=time],input[type=date]{width:100%;padding:12px 14px;border:2px solid #e2e8f0;border-radius:10px;font-size:15px;font-weight:600;color:#ffffff;background:#f8fafc;outline:none;transition:border 0.2s;cursor:pointer}
     select:focus,input:focus{border-color:#4f46e5;background:#fff}
     .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
     @media(max-width:520px){.row2{grid-template-columns:1fr}}
@@ -45,11 +46,11 @@
     .result-wrap{display:none}
     .time-display{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
     .time-box{flex:1;min-width:200px;background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:14px;padding:24px;color:#fff;text-align:center}
-    .time-box.dest{background:linear-gradient(135deg,#0ea5e9,#0284c7)}
+    .time-box.dest{background:linear-gradient(135deg,#334155,#0284c7)}
     .time-val{font-size:clamp(28px,6vw,44px);font-weight:900;line-height:1}
     .time-tz{font-size:13px;opacity:0.8;margin-top:6px;font-weight:600}
     .time-date{font-size:14px;opacity:0.85;margin-top:4px}
-    .arrow{font-size:32px;color:#94a3b8;flex-shrink:0}
+    .arrow{font-size:32px;color:#64748b;flex-shrink:0}
     .offset-info{background:#f8fafc;border-radius:10px;padding:14px;font-size:14px;color:#475569;margin-top:16px;text-align:center}
     .quick-zones{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
     .qz{padding:6px 12px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:12px;font-weight:600;color:#475569;cursor:pointer;transition:all 0.15s}
@@ -59,6 +60,14 @@
     footer a{color:#818cf8}
   </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert time between two time zones?","acceptedAnswer":{"@type":"Answer","text":"Pick the date and time, choose the from zone and the to zone, and the converter shows the equivalent local time instantly. It uses your browser built-in time zone database, so the result already accounts for each region current UTC offset. This works for any pair of zones worldwide."}},{"@type":"Question","name":"Does this converter handle Daylight Saving Time?","acceptedAnswer":{"@type":"Answer","text":"Yes. Because it relies on the browser time zone data, it automatically applies Daylight Saving Time changes for the specific date you enter. That means a summer date and a winter date between the same two cities can show a different offset. You do not need to adjust anything manually."}},{"@type":"Question","name":"What is the time difference between EST and GMT?","acceptedAnswer":{"@type":"Answer","text":"Eastern Standard Time is normally five hours behind GMT, so 12:00 GMT is 07:00 EST. During Daylight Saving the gap becomes four hours because the US and UK switch clocks on different dates. Enter your exact date above to get the correct offset for that day."}},{"@type":"Question","name":"How many hours ahead is India (IST) of the US?","acceptedAnswer":{"@type":"Answer","text":"India Standard Time is UTC+5:30 and does not observe Daylight Saving, so it is roughly 9.5 to 12.5 hours ahead of the US depending on the US zone and season. For example, IST is about 10.5 hours ahead of US Eastern Time in summer. Use the converter for the precise figure on your chosen date."}}]}</script>
+<style id="tabutility-brand">
+/* empty ad slots: reserve space, no bordered box */
+.ad-banner,.ad-slot,.ad-container{background:transparent!important;border:none!important;border-bottom:none!important;box-shadow:none!important}
+ins.adsbygoogle,.ad-banner iframe,.ad-slot iframe{visibility:hidden!important}
+ins.adsbygoogle[data-ad-status="filled"],.ad-banner ins[data-ad-status="filled"] iframe,.ad-slot ins[data-ad-status="filled"] iframe{visibility:visible!important}
+nav .brand{color:#0f172a}
+body{-webkit-font-smoothing:antialiased}
+</style>
 </head>
 <body>
 <nav>
@@ -133,19 +142,19 @@
   <div class="card">
     <h2>Frequently Asked Questions</h2>
     <div style="margin-bottom:16px">
-      <h3 style="font-size:15px;font-weight:700;color:#1e293b;margin:0 0 6px">How do I convert time between two time zones?</h3>
+      <h3 style="font-size:15px;font-weight:700;color:#ffffff;margin:0 0 6px">How do I convert time between two time zones?</h3>
       <p style="font-size:14px;color:#475569;margin:0">Pick the date and time, choose the "from" zone and the "to" zone, and the converter shows the equivalent local time instantly. It uses your browser's built-in time zone database, so the result already accounts for each region's current UTC offset. This works for any pair of zones worldwide.</p>
     </div>
     <div style="margin-bottom:16px">
-      <h3 style="font-size:15px;font-weight:700;color:#1e293b;margin:0 0 6px">Does this converter handle Daylight Saving Time?</h3>
+      <h3 style="font-size:15px;font-weight:700;color:#ffffff;margin:0 0 6px">Does this converter handle Daylight Saving Time?</h3>
       <p style="font-size:14px;color:#475569;margin:0">Yes. Because it relies on the browser's time zone data, it automatically applies Daylight Saving Time changes for the specific date you enter. That means a summer date and a winter date between the same two cities can show a different offset. You do not need to adjust anything manually.</p>
     </div>
     <div style="margin-bottom:16px">
-      <h3 style="font-size:15px;font-weight:700;color:#1e293b;margin:0 0 6px">What is the time difference between EST and GMT?</h3>
+      <h3 style="font-size:15px;font-weight:700;color:#ffffff;margin:0 0 6px">What is the time difference between EST and GMT?</h3>
       <p style="font-size:14px;color:#475569;margin:0">Eastern Standard Time is normally five hours behind GMT, so 12:00 GMT is 07:00 EST. During Daylight Saving the gap becomes four hours because the US and UK switch clocks on different dates. Enter your exact date above to get the correct offset for that day.</p>
     </div>
     <div>
-      <h3 style="font-size:15px;font-weight:700;color:#1e293b;margin:0 0 6px">How many hours ahead is India (IST) of the US?</h3>
+      <h3 style="font-size:15px;font-weight:700;color:#ffffff;margin:0 0 6px">How many hours ahead is India (IST) of the US?</h3>
       <p style="font-size:14px;color:#475569;margin:0">India Standard Time is UTC+5:30 and does not observe Daylight Saving, so it is roughly 9.5 to 12.5 hours ahead of the US depending on the US zone and season. For example, IST is about 10.5 hours ahead of US Eastern Time in summer. Use the converter for the precise figure on your chosen date.</p>
     </div>
   </div>
@@ -263,28 +272,28 @@
 </script>
 
 <!-- embed-widget -->
-<div style="max-width:640px;margin:0 auto 32px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px">
-  <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Embed This Tool</h2>
+<div style="max-width:640px;margin:0 auto 32px;background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;padding:18px">
+  <h2 style="font-size:15px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Embed This Tool</h2>
   <p style="font-size:13px;color:#64748b;margin-bottom:12px">Add this Time Zone Converter to your website or blog for free — just paste this code:</p>
-  <div style="background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px;font-family:monospace;font-size:12px;color:#7dd3fc;word-break:break-all;margin-bottom:10px" id="embed-code">&lt;iframe src=&quot;https://time-zone-converter.tabutility.com/&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; style=&quot;border-radius:12px&quot; title=&quot;Time Zone Converter by Tabutility&quot;&gt;&lt;/iframe&gt;
+  <div style="background:#f8f7f4;border:1px solid #e2e8f0;border-radius:8px;padding:12px;font-family:'Inter',monospace;font-size:12px;color:#7dd3fc;word-break:break-all;margin-bottom:10px" id="embed-code">&lt;iframe src=&quot;https://time-zone-converter.tabutility.com/&quot; width=&quot;100%&quot; height=&quot;600&quot; frameborder=&quot;0&quot; style=&quot;border-radius:12px&quot; title=&quot;Time Zone Converter by Tabutility&quot;&gt;&lt;/iframe&gt;
 &lt;p style=&quot;font-size:12px&quot;&gt;&lt;a href=&quot;https://time-zone-converter.tabutility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Time Zone Converter&lt;/a&gt; by &lt;a href=&quot;https://tabutility.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tabutility&lt;/a&gt;&lt;/p&gt;</div>
-  <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Embed Code',2000)})" style="background:#38bdf8;color:#0f172a;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer">Copy Embed Code</button>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').textContent).then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Embed Code',2000)})" style="background:#0f172a;color:#f8f7f4;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer">Copy Embed Code</button>
   <span style="font-size:11px;color:#475569;margin-left:12px">Free to use — the credit link helps others find the tool</span>
 </div>
-<div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://www.amazon.com/s?k=productivity+reference+books&tag=tabutility-20','_blank','noopener noreferrer')" title="Boost your productivity?">
+<div style="margin:0 auto 24px;max-width:640px;background:#ffffff;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #e2e8f0" onclick="window.open('https://www.amazon.com/s?k=productivity+reference+books&tag=tabutility-20','_blank','noopener noreferrer')" title="Boost your productivity?">
   <span style="font-size:28px;flex-shrink:0">📚</span>
   <div style="min-width:0">
-    <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Boost your productivity?</div>
-    <div style="font-size:12px;color:#94a3b8">Browse productivity & reference books <span style="color:#f59e0b;white-space:nowrap">→ Browse on Amazon</span></div>
+    <div style="font-size:13px;font-weight:700;color:#0f172a;margin-bottom:3px">Boost your productivity?</div>
+    <div style="font-size:12px;color:#64748b">Browse productivity & reference books <span style="color:#f59e0b;white-space:nowrap">→ Browse on Amazon</span></div>
     <div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div>
   </div>
 </div>
-<h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;max-width:640px;margin-left:auto;margin-right:auto">Related Tools</h2>
+<h2 style="font-size:15px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;max-width:640px;margin-left:auto;margin-right:auto">Related Tools</h2>
 <div style="max-width:640px;margin:0 auto 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
-  <a href="https://currency-converter.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Currency Converter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Converters</div></a>
-  <a href="https://unit-converter.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Unit Converter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Converters</div></a>
-  <a href="https://date-difference-calculator.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Days Between Dates Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
-  <a href="https://percentage-change-calculator.tabutility.com/" style="display:block;background:rgba(30,41,59,1);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#f1f5f9">Percentage Change Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div></a>
+  <a href="https://currency-converter.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">Currency Converter</div><div style="font-size:11px;color:#64748b;margin-top:2px">Converters</div></a>
+  <a href="https://unit-converter.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">Unit Converter</div><div style="font-size:11px;color:#64748b;margin-top:2px">Converters</div></a>
+  <a href="https://date-difference-calculator.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">Days Between Dates Calculator</div><div style="font-size:11px;color:#64748b;margin-top:2px">Calculators</div></a>
+  <a href="https://percentage-change-calculator.tabutility.com/" style="display:block;background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit"><div style="font-size:13px;font-weight:600;color:#0f172a">Percentage Change Calculator</div><div style="font-size:11px;color:#64748b;margin-top:2px">Calculators</div></a>
 </div>
 </body>
 </html>
